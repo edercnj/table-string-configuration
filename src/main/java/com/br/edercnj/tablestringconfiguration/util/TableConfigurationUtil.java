@@ -1,7 +1,6 @@
 package com.br.edercnj.tablestringconfiguration.util;
 
 import com.br.edercnj.tablestringconfiguration.annotation.TableConfiguration;
-import com.br.edercnj.tablestringconfiguration.annotation.TableField;
 import com.br.edercnj.tablestringconfiguration.exception.TableConfigurationClassNotFound;
 import com.br.edercnj.tablestringconfiguration.exception.TableConfigurationNotFound;
 import org.apache.commons.lang.StringUtils;

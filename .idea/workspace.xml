@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9276c29-f2c8-427f-bb5a-a05f3477fff1" name="Changes" comment="" />
+    <list default="true" id="e9276c29-f2c8-427f-bb5a-a05f3477fff1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/annotation/BitConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/annotation/BitConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/service/TableConfigurationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/service/TableConfigurationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/HexUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/HexUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/HexadecimalConfigurationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/HexadecimalConfigurationUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/TableConfigurationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/TableConfigurationUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/TableFieldUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/TableFieldUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/mocks/BinConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/mocks/BinConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/mocks/RangeBin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/mocks/RangeBin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/service/TableConfigurationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/service/TableConfigurationServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,8 +125,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/service/TableConfigurationServiceTest.java</url>
-          <line>44</line>
+          <line>40</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/service/TableConfigurationService.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

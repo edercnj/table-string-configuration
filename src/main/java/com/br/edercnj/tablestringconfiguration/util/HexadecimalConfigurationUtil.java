@@ -7,6 +7,8 @@ import java.lang.annotation.Annotation;
 
 public class HexadecimalConfigurationUtil {
 
+    protected HexadecimalConfigurationUtil() throws IllegalAccessException {throw new IllegalAccessException("Utility class");}
+
     public static int getOrder(HexadecimalConfiguration annotation) {return annotation.order();}
 
     public static boolean isHexadecimalConfiguration(Annotation annotation) {

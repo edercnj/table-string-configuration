@@ -1,7 +1,5 @@
 package com.br.edercnj.tablestringconfiguration.util;
 
-import com.br.edercnj.tablestringconfiguration.annotation.BitConfiguration;
-import com.br.edercnj.tablestringconfiguration.annotation.HexadecimalConfiguration;
 import com.br.edercnj.tablestringconfiguration.annotation.TableField;
 
 import java.lang.annotation.Annotation;

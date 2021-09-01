@@ -26,5 +26,6 @@ public class RangeBin {
     String flows;
     @HexadecimalConfiguration(order = 7)
     BinConfiguration binConfiguration;
+    String name;
 
 }

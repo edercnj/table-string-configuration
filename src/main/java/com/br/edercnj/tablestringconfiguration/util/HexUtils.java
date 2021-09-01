@@ -2,6 +2,8 @@ package com.br.edercnj.tablestringconfiguration.util;
 
 public class HexUtils {
 
+    protected HexUtils() throws IllegalAccessException {throw new IllegalAccessException("Utility class");}
+
     public static String convertStringToHex(String bitStream) {
         int byteLength = 4;
         int bitStartPos = 0, bitPos = 0;

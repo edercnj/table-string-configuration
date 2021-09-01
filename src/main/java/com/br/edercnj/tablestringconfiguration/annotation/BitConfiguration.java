@@ -10,8 +10,8 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface BitConfiguration {
-
-
     @Range(min = 0, max = 7)
     int bit();
+
+    String description() default "";
 }

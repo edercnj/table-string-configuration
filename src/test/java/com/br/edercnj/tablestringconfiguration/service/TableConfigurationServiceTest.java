@@ -1,24 +1,19 @@
 package com.br.edercnj.tablestringconfiguration.service;
 
-import com.br.edercnj.tablestringconfiguration.annotation.TableConfiguration;
 import com.br.edercnj.tablestringconfiguration.exception.TableConfigurationException;
 import com.br.edercnj.tablestringconfiguration.mocks.BinConfiguration;
 import com.br.edercnj.tablestringconfiguration.mocks.RangeBin;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class TableConfigurationServiceTest {
 
     private RangeBin rangeBin;
-    private BinConfiguration binConfiguration;
 
     @BeforeEach
     void setUp() {
-        binConfiguration = new BinConfiguration();
+        BinConfiguration binConfiguration = new BinConfiguration();
         binConfiguration.setBit0(false);
         binConfiguration.setBit1(true);
         binConfiguration.setBit2(false);
@@ -37,11 +32,12 @@ class TableConfigurationServiceTest {
         rangeBin.setFlows("00010002");
         rangeBin.setPanLength(12);
         rangeBin.setProductId(2);
+        rangeBin.setName("Bin test");
     }
 
     @Test
-    void test() throws TableConfigurationException, InstantiationException, IllegalAccessException {
+    void test() throws TableConfigurationException, IllegalAccessException {
         String config = TableConfigurationService.generateConfigurationString(rangeBin);
-        Assertions.assertNotNull(config);
+        Assertions.assertEquals("020430001600012600020120000000000102080001000255",  config);
     }
 }

@@ -2,13 +2,10 @@ package com.br.edercnj.tablestringconfiguration.mocks;
 
 import com.br.edercnj.tablestringconfiguration.annotation.BitConfiguration;
 import com.br.edercnj.tablestringconfiguration.annotation.HexadecimalConfiguration;
-import com.br.edercnj.tablestringconfiguration.annotation.TableField;
-import com.br.edercnj.tablestringconfiguration.model.LengthType;
-import com.br.edercnj.tablestringconfiguration.model.TableFieldType;
 import lombok.Data;
 
-@HexadecimalConfiguration
 @Data
+@HexadecimalConfiguration
 public class BinConfiguration {
     @BitConfiguration(bit = 7)
     boolean bit7;

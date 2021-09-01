@@ -1,5 +1,6 @@
 package com.br.edercnj.tablestringconfiguration.service;
 
+import com.br.edercnj.tablestringconfiguration.annotation.BitConfiguration;
 import com.br.edercnj.tablestringconfiguration.annotation.HexadecimalConfiguration;
 import com.br.edercnj.tablestringconfiguration.annotation.TableField;
 import com.br.edercnj.tablestringconfiguration.exception.TableConfigurationException;
@@ -14,7 +15,10 @@ import java.lang.reflect.Field;
 import java.util.Arrays;
 
 public class TableConfigurationService {
-    public static <T> String generateConfigurationString(T configurationClass) throws TableConfigurationException, InstantiationException, IllegalAccessException {
+
+    protected TableConfigurationService() throws IllegalAccessException {throw new IllegalAccessException("Utility class");}
+
+    public static <T> String generateConfigurationString(T configurationClass) throws TableConfigurationException, IllegalAccessException {
         Class<?> localClass = configurationClass.getClass();
         if (TableConfigurationUtil.isTableConfiguration(localClass)) {
             String tableId = TableConfigurationUtil.getTableId(TableConfigurationUtil.getTableConfigurationAnnotations(localClass));
@@ -44,7 +48,7 @@ public class TableConfigurationService {
             }
         }
         StringBuilder fieldsConfiguration = new StringBuilder();
-        Arrays.stream(configuration).forEach(fieldsConfiguration::append);
+        Arrays.stream(configuration).forEach(value -> {if (value != null) {fieldsConfiguration.append(value);}});
         return fieldsConfiguration.toString();
     }
 
@@ -120,17 +124,20 @@ public class TableConfigurationService {
 
     private static <T> void processHexadecimalConfiguration(String[] configuration, T hexadecimalClassConfiguration, HexadecimalConfiguration annotation) {
         try {
-            StringBuilder bitConfiguration = new StringBuilder();
-            for (Field field : hexadecimalClassConfiguration.getClass().getDeclaredFields()) {
+            Field[] fields = hexadecimalClassConfiguration.getClass().getDeclaredFields();
+            String[] arrayBitConfigurations = new String[fields.length];
+            for (Field field : fields) {
                 field.setAccessible(true);
                 Annotation[] annotations = field.getDeclaredAnnotations();
                 for (Annotation tableFieldAnnotation : annotations) {
                     if (HexadecimalConfigurationUtil.isBitConfiguration(tableFieldAnnotation) && field.getType().equals(boolean.class)) {
                         boolean enable = field.getBoolean(hexadecimalClassConfiguration);
-                        bitConfiguration.append(enable ? "1" : "0");
+                        arrayBitConfigurations[((BitConfiguration) tableFieldAnnotation).bit()] = enable ? "1" : "0";
                     }
                 }
             }
+            StringBuilder bitConfiguration = new StringBuilder();
+            Arrays.stream(arrayBitConfigurations).forEach(value -> {if (value != null) {bitConfiguration.append(value);}});
             configuration[HexadecimalConfigurationUtil.getOrder(annotation)] = HexUtils.convertStringToHex(bitConfiguration.toString());
         } catch (IllegalAccessException e) {
             e.printStackTrace();
