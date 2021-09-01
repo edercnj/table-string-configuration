@@ -4,11 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9276c29-f2c8-427f-bb5a-a05f3477fff1" name="Changes" comment="" />
+    <list default="true" id="e9276c29-f2c8-427f-bb5a-a05f3477fff1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/annotation/BitConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/annotation/HexadecimalConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/annotation/TableConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/annotation/TableField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/exception/TableConfigurationClassNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/exception/TableConfigurationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/exception/TableConfigurationNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/model/LengthType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/model/TableFieldType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/service/TableConfigurationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/HexUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/HexadecimalConfigurationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/TableConfigurationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/util/TableFieldUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/mocks/BinConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/mocks/RangeBin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/service/TableConfigurationServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/edercnj/tablestringconfiguration/TableStringConfigurationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/TableStringConfigurationApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,10 +58,39 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.br.edercnj.tablestringconfiguration.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.br.edercnj.tablestringconfiguration.exception" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TableConfigurationServiceTest.test">
+    <configuration name="TableConfigurationServiceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="table-string-configuration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.br.edercnj.tablestringconfiguration.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.br.edercnj.tablestringconfiguration.service" />
+      <option name="MAIN_CLASS_NAME" value="com.br.edercnj.tablestringconfiguration.service.TableConfigurationServiceTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -49,6 +109,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TableConfigurationServiceTest.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,11 +123,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630413575033</updated>
-      <workItem from="1630413576380" duration="616000" />
+      <workItem from="1630413576380" duration="12080000" />
+      <workItem from="1630495084045" duration="9858000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/br/edercnj/tablestringconfiguration/service/TableConfigurationServiceTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
